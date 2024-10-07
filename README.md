@@ -52,7 +52,7 @@ Ancient Vision’s goal is to apply styles from historical art movements (such a
 - [Vinay Surwase](https://github.com/VinaySurwase)
 - [Taanvi Khevaria](https://github.com/taanvi2205)
 - [Meenakshi Shibu](https://github.com/meenakshishibu16)
-- Om Parate
+- [Om Parate](https://github.com/omparate7)
 - [Abhinav Harsh](https://github.com/Abhinav-creator45)
 
 ---
