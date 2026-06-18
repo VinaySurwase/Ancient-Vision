@@ -4,6 +4,9 @@ Enhanced test script for art transformation with longer timeout for quality resu
 Tests the improved parameters: strength=0.8, guidance_scale=15.0, num_inference_steps=30
 """
 
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import requests
 import base64
 import json

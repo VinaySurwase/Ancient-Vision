@@ -4,7 +4,8 @@ Test script to check statue restoration model loading
 """
 import sys
 import os
-sys.path.append('/Users/vinaysurwase/Documents/PR_NEW/Ancient-Vision/modules/statue_restoration')
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'modules', 'statue_restoration')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from statue_restoration import StatueRestorer
 

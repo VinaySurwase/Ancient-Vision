@@ -1,4 +1,4 @@
-# 🎨 Ancient Vision
+# Ancient Vision
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -9,15 +9,15 @@
 
 Ancient Vision bridges the gap between modern photography and traditional art, allowing users to experience the timeless beauty of both Japanese and Indian heritage styles through cutting-edge artificial intelligence.
 
-## ✨ Features
+## Features
 
-### 🎨 **Artistic Transformation**
+### **Artistic Transformation**
 
 - **Authentic Traditional Styles**: Transform images into Japanese Ukiyo-e and a wide range of Indian folk and temple art styles
 - **ControlNet Integration**: Structural guidance while maintaining artistic style
-  - 🎯 **Canny Edge Detection**: Preserves edges and outlines (automatically applied)
-  - 🏔️ **Depth Estimation**: Maintains spatial relationships and depth
-  - 🕺 **Pose Detection**: Preserves human poses and body structure
+  - **Canny Edge Detection**: Preserves edges and outlines (automatically applied)
+  - **Depth Estimation**: Maintains spatial relationships and depth
+  - **Pose Detection**: Preserves human poses and body structure
 - **Smart Prompting**: Default prompt with optional user additions
   - Each style has a unique, culturally accurate prompt for best results
   - User prompts are appended to the default for enhanced results
@@ -39,23 +39,38 @@ Ancient Vision bridges the gap between modern photography and traditional art, a
   - **Mandana Art**: Rajasthani wall art, geometric and auspicious patterns
   - **Pichwai Painting**: Nathdwara temple art, Krishna themes, devotional motifs
 
-### 📱 **Modern Input Methods**
+### **Modern Input Methods**
 
 - **File Upload**: Standard drag-and-drop or click-to-browse functionality
 - **Real-time Camera Capture**:
-  - 📸 Direct photo capture within the application
-  - 🔄 Front/back camera switching for mobile devices
-  - 🎯 High-definition capture (1280x720 resolution)
-  - 📱 Mobile-first responsive design
-  - 🛡️ Secure permission-based camera access
+  - Direct photo capture within the application
+  - Front/back camera switching for mobile devices
+  - High-definition capture (1280x720 resolution)
+  - Mobile-first responsive design
+  - Secure permission-based camera access
 
-### 🚀 **User Experience**
+### **User Experience**
 
 - **Intuitive Interface**: Clean, minimalist design focused on the art creation process
 - **Instant Results**: Fast processing with optimized AI pipeline
 - **Cross-platform**: Works seamlessly on desktop and mobile browsers
 
-## 🛠️ Tech Stack
+## Repository Structure
+
+```text
+Ancient-Vision/
+├── docs/                   # Auxiliary documentation
+├── frontend/               # React frontend application
+├── models/                 # AI models and weights
+├── modules/                # Core Python modules
+├── notebooks/              # Jupyter notebooks for research
+├── scripts/                # Utility scripts
+├── tests/                  # Automated test scripts
+├── app.py                  # Main Flask backend application
+└── run.sh                  # Quickstart script
+```
+
+## Tech Stack
 
 | Component            | Technology                     | Purpose                                     |
 | -------------------- | ------------------------------ | ------------------------------------------- |
@@ -65,7 +80,7 @@ Ancient Vision bridges the gap between modern photography and traditional art, a
 | **ControlNet**       | Multiple ControlNet Models     | Structural guidance and preservation        |
 | **Image Processing** | Canvas API + WebRTC            | Real-time camera capture and processing     |
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Automated Setup (Recommended)
 
@@ -86,9 +101,9 @@ chmod +x run.sh
 - **Backend API**: http://localhost:5000
 - **API Documentation**: http://localhost:5000/docs
 
-## 📖 Usage Guide
+## Usage Guide
 
-### 🖼️ Image Input Methods
+### Image Input Methods
 
 #### Traditional Upload
 
@@ -104,7 +119,7 @@ chmod +x run.sh
 5. Click **"Capture Photo"** to take the picture
 6. Your image is immediately ready for transformation
 
-### 🎨 Transformation Workflow
+### Transformation Workflow
 
 1. **Select Input**: Upload a file or capture with camera
 2. **Choose Model**: Select your art model (automatic detection of available models)
@@ -113,7 +128,7 @@ chmod +x run.sh
 5. **Transform**: Click transform and let AI create your traditional artwork with automatic ControlNet guidance
 6. **Download**: Save your traditional artwork
 
-### 📋 Default Configuration
+### Default Configuration
 
 | Parameter       | Value                                                               | Purpose                                  |
 | --------------- | ------------------------------------------------------------------- | ---------------------------------------- |
@@ -125,7 +140,7 @@ chmod +x run.sh
 | **Resolution**  | 512x512                                                             | Optimized for model performance          |
 | **ControlNet**  | Canny (0.8 strength)                                                | Automatic edge preservation              |
 
-### 📋 Camera Feature Requirements
+### Camera Feature Requirements
 
 | Requirement      | Details                                      |
 | ---------------- | -------------------------------------------- |
@@ -134,7 +149,7 @@ chmod +x run.sh
 | **Connectivity** | Active internet connection for AI processing |
 | **Performance**  | Modern device with adequate processing power |
 
-## ⚙️ Manual Setup
+## Manual Setup
 
 ### Prerequisites
 
@@ -173,7 +188,7 @@ cp your_custom_model.safetensors models/
 # Models are automatically detected and loaded
 ```
 
-## 🔌 API Reference
+## API Reference
 
 ### Endpoints
 
@@ -202,7 +217,7 @@ curl -X POST http://localhost:5001/api/transform \
   }'
 ```
 
-## 👩‍💻 Development
+## Development
 
 ### Environment Setup
 
@@ -241,7 +256,7 @@ black .
 flake8 .
 ```
 
-## 🔒 Security & Privacy
+## Security & Privacy
 
 ### Data Protection
 
@@ -257,16 +272,6 @@ flake8 .
 - **Browser Security**: Leverages native browser security for camera access
 - **HTTPS Requirement**: Camera functionality requires secure connections in production
 
-## 🌐 Browser Compatibility
-
-| Browser       | Version | Camera Support | WebRTC | Canvas API |
-| ------------- | ------- | -------------- | ------ | ---------- |
-| Chrome        | 53+     | ✅ Full        | ✅     | ✅         |
-| Firefox       | 36+     | ✅ Full        | ✅     | ✅         |
-| Safari        | 11+     | ✅ Full        | ✅     | ✅         |
-| Edge          | 12+     | ✅ Full        | ✅     | ✅         |
-| Mobile Chrome | 53+     | ✅ Full        | ✅     | ✅         |
-| Mobile Safari | 11+     | ✅ Full        | ✅     | ✅         |
 
 ### Feature Support Notes
 
@@ -274,7 +279,7 @@ flake8 .
 - **HTTPS required** for camera access in all modern browsers
 - **WebGL support** recommended for optimal performance
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions from the community! Please follow these guidelines:
 
@@ -296,11 +301,11 @@ We welcome contributions from the community! Please follow these guidelines:
 - Update documentation as needed
 - Ensure all tests pass before submitting
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Traditional Ukiyo-e artists who inspired this work
 - The Stable Diffusion community for foundational AI models
@@ -315,11 +320,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Updates**: Watch the repository for latest releases and updates
 
 ---
-
-<div align="center">
-
-**[⬆ Back to Top](#-ancient-vision)**
-
-Made with ❤️ for art enthusiasts and technology lovers
-
-</div>
